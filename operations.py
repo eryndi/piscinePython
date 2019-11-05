@@ -23,10 +23,10 @@ def math_operations(one, two):
 if __name__ == "__main__":
 
     if len(sys.argv[1:]) != 2:
-        raise Exception("InputError: wrong number of arguments \
+        raise Exception("InputError: wrong number of arguments. \
 Usage: python operations.py Example: python operations.py 10 3")
     if sum(each.isdigit() for each in sys.argv[1:]) != 2:
-        raise Exception("InputError: arguments are not numbers or are not positive numbers\
+        raise Exception("InputError: arguments are not numbers or are not positive or whole numbers. \
 Usage: python operations.py Example: python operations.py 10 3")
 
     one, two = sys.argv[1:3]
